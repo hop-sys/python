@@ -3,5 +3,5 @@
 principle = 50000
 rate = 5
 time = 8
-SimpleInterest = (principle * rate * time)
+SimpleInterest = (principle * rate * time) /100
 print("The Simple Interest is: ", SimpleInterest)
