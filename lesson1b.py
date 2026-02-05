@@ -15,4 +15,6 @@ coordinates= 15.4524
 print("The coordinate are: ", coordinates)
 print(type(coordinates))
 
+#complex numbers are written with 'j' as an imaginary part
+
 #Research and come up with an example of complex data type

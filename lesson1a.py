@@ -3,13 +3,14 @@
 #Anything that is inside of qoutes in python is called a string
 message="Hello there,hope everything is fine?"
 print(message)
+
 message2=" Goodbye!"
 print(message2)
 
-#concatenating variables
+#concatenating variables(joining two or more outputs together)you can only concantenate a string with a string
 message3=message + message2
 print(message3)
-
+# cannot seperate variables with space
 #variable names cannot contain spaces,quotes are only used for text
 total_marks= 85
 print(total_marks)
