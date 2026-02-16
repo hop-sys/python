@@ -23,5 +23,5 @@ player = {
     "teams" : ["PSG", "Barcelona", "Argentina"]
 }
 # print barcelona - the second team he played
-
+print("The team he played for is",player["teams"][1])
 
