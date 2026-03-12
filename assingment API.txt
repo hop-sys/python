@@ -1,0 +1,220 @@
+What is an API
+Examples of API
+REST APIs
+Methods that are there on REST APIs
+Tools that are used to test APIs.
+How does an API connect the frontEnd with the BackEnd
+What is Python Flask.
+
+
+1️⃣ What is an API?
+
+An API (Application Programming Interface) is a bridge that allows two different software systems to communicate with each other.
+
+It lets one program request data or services from another program.
+
+Simple Example:
+
+Your mobile app asks: “Send me user details.”
+
+The server responds with the user data.
+
+That communication happens through an API.
+
+Think of an API like a waiter in a restaurant:
+
+You (frontend) place an order.
+
+The waiter (API) takes it to the kitchen (backend).
+
+The kitchen prepares food and sends it back.
+
+2️⃣ Examples of APIs
+
+Here are real-world examples:
+
+🔹 M-Pesa API – process payments
+
+🔹 Google Maps API – show maps in apps
+
+🔹 Weather API – get weather data
+
+🔹 Facebook Login API – login using Facebook
+
+🔹 YouTube API – fetch videos
+
+3️⃣ What are REST APIs?
+
+REST means:
+
+REpresentational State Transfer
+
+A REST API is a type of API that:
+
+Uses HTTP (web)
+
+Follows specific rules
+
+Works with URLs
+
+Uses methods like GET, POST, PUT, DELETE
+
+Most modern APIs (including M-Pesa) are REST APIs.
+
+Example URL:
+
+https://api.example.com/users/1
+
+4️⃣ Methods Used in REST APIs
+
+These are called HTTP Methods:
+
+Method	What It Does	Example
+GET	Retrieve data	Get user info
+POST	Create data	Register user
+PUT	Update data	Update profile
+DELETE	Remove data	Delete account
+Example:
+requests.get(url)     # GET
+requests.post(url)    # POST
+requests.put(url)     # UPDATE
+requests.delete(url)  # DELETE
+
+5️⃣ Tools Used to Test APIs
+
+Developers use these tools:
+
+🔹 Postman
+
+Most popular API testing tool.
+
+🔹 Insomnia
+
+Alternative to Postman.
+
+🔹 Thunder Client
+
+VS Code extension.
+
+🔹 cURL
+
+Command-line tool.
+
+🔹 Browser
+
+For simple GET requests.
+
+6️⃣ How Does an API Connect Frontend and Backend?
+
+Let’s break it step-by-step:
+
+Step 1: User clicks button (Frontend)
+
+Example: “Login”
+
+Step 2: Frontend sends request to API
+
+Example:
+
+fetch("/api/login")
+
+Step 3: Backend receives request
+
+Backend processes data (check database).
+
+Step 4: Backend sends response
+
+Example:
+
+{
+  "status": "success",
+  "user": "Hope"
+}
+
+Step 5: Frontend displays result
+
+Shows dashboard or error message.
+
+🔁 Flow Diagram
+Frontend → API → Backend → Database
+Frontend ← API ← Backend ← Database
+
+
+The API acts as the communication bridge.
+
+7️⃣ What is Python Flask?
+
+Flask is a lightweight Python framework used to build web applications and APIs.
+
+It allows you to:
+
+Create websites
+
+Build REST APIs
+
+Handle HTTP requests
+
+Connect to databases
+
+Simple Flask Example
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Hello, World!"
+
+app.run()
+
+
+This creates a simple web server.
+
+Flask API Example
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+@app.route("/api/user")
+def get_user():
+    return jsonify({"name": "Hope", "age": 16})
+
+app.run()
+
+
+When someone visits:
+
+http://127.0.0.1:5000/api/user
+
+
+They receive:
+
+{
+  "name": "Hope",
+  "age": 17
+}
+
+
+That’s an API built with Flask.
+
+🚀 Since You’re Learning Python + M-Pesa
+
+The next powerful skill for you is:
+
+Build a Flask API
+
+Connect it to a database
+
+Add M-Pesa integration
+
+Test it with Postman
+
+That’s how real systems are built in Kenya (schools, shops, SaaS platforms).
+
+If you want, I can now:
+
+Show you how to build a simple REST API step-by-step
+
+Show how to connect Flask to MySQL
+
+Or explain APIs in an even simpler way for exams 😊
